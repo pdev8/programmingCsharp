@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{580283E6-8487-4B7B-905F-950C437E94C8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSP</RootNamespace>
+    <AssemblyName>CSP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Selenium.WebDriverBackedSelenium, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriverBackedSelenium.3.14.0\lib\net45\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Twilio, Version=5.13.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.13.2\lib\net451\Twilio.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=3.3.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.5.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.9.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdventOCode\Day1.cs" />
+    <Compile Include="AdventOCode\Day2.cs" />
+    <Compile Include="AdventOCode\Day3.cs" />
+    <Compile Include="AdventOCode\Day5.cs" />
+    <Compile Include="AdventOCode\Day7.cs" />
+    <Compile Include="AdventOCode\FileReader.cs" />
+    <Compile Include="AdventOCode\IFileReader.cs" />
+    <Compile Include="AdventOCode\Node.cs" />
+    <Compile Include="AdventOCode\ScottsWay.cs" />
+    <Compile Include="Algorithms\DogBread.cs" />
+    <Compile Include="Algorithms\Fizzbuzz.cs" />
+    <Compile Include="Algorithms\LINQ2.cs" />
+    <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\ReverseString.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch10Ex01\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch10Ex02\ClassA.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch10Ex02\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex01\Animal.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex01\Cow.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex01\Chicken.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch10Ex01\MyClass.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex01\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex02\Animals.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex02\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex03\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch11Ex03\Primes.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex03\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex03\Vector.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex03\VectorDelegates.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex03\Vectors.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\Animal.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\Chicken.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\Cow.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\Farm.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\MainCopy.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch12Ex04\SuperCow.cs" />
+    <Compile Include="BeginningCSharpProgramming\Ch13Ex08\LambdaExpression.cs" />
+    <Compile Include="Cake\IC01.cs" />
+    <Compile Include="Cake\IC02.cs" />
+    <Compile Include="Cake\IC03.cs" />
+    <Compile Include="Cake\IC04\IC04Main.cs" />
+    <Compile Include="Cake\IC04\Meeting.cs" />
+    <Compile Include="Cake\IC08.cs" />
+    <Compile Include="Cake\IC15.cs" />
+    <Compile Include="Cake\IC22.cs" />
+    <Compile Include="Cake\IC24.cs" />
+    <Compile Include="Cake\IC25.cs" />
+    <Compile Include="Cake\IC32.cs" />
+    <Compile Include="Cake\IC43.cs" />
+    <Compile Include="Cake\SampleEx.cs" />
+    <Compile Include="Challenge\Coding\ASCII.cs" />
+    <Compile Include="Challenge\Coding\EvalPI.cs" />
+    <Compile Include="Challenge\Coding\MultiplicationTable.cs" />
+    <Compile Include="Challenge\ParkingLot\Vehicle.cs" />
+    <Compile Include="Challenge\Structure\CarOwner.cs" />
+    <Compile Include="Challenge\Structure\Level.cs" />
+    <Compile Include="Challenge\Structure\Space.cs" />
+    <Compile Include="CSharpCorner\Generic\CompareGenericClass.cs" />
+    <Compile Include="CSharpCorner\Generic\CompareGenericClassMainCopy.cs" />
+    <Compile Include="Dart\CardDemo.cs" />
+    <Compile Include="DotNetPerls\Generic\MainCopy.cs" />
+    <Compile Include="DotNetPerls\Generic\Test.cs" />
+    <Compile Include="Expression-bodied_Members\Location.cs" />
+    <Compile Include="Expression-bodied_Members\Person.cs" />
+    <Compile Include="GitHub\DependencyInjection\IWeapon.cs" />
+    <Compile Include="GitHub\DependencyInjection\Samurai.cs" />
+    <Compile Include="GitHub\DependencyInjection\SamuraiMain.cs" />
+    <Compile Include="GitHub\DependencyInjection\Sword.cs" />
+    <Compile Include="HackerRank\MirthEx01-2.cs" />
+    <Compile Include="HackerRank\MirthEx02.cs" />
+    <Compile Include="HackerRank\MirthEx01.cs" />
+    <Compile Include="HackerRank\MirthEx03.cs" />
+    <Compile Include="HackerRank\MirthEx05.cs" />
+    <Compile Include="HackerRank\SimpleArraySum_Easy.cs" />
+    <Compile Include="HerculesFreight\HerculesFreightMainCopy.cs" />
+    <Compile Include="HerculesFreight\HerculesResponse.cs" />
+    <Compile Include="Misc\Custom\ETAP\CustomList.cs" />
+    <Compile Include="Misc\Custom\ETAP\MainCopy.cs" />
+    <Compile Include="Misc\Custom\Test1.cs" />
+    <Compile Include="Misc\Custom\Test2.cs" />
+    <Compile Include="Misc\Custom\Toptal\10ClassA.cs" />
+    <Compile Include="Misc\Custom\Toptal\10ClassAMain.cs" />
+    <Compile Include="Misc\Custom\Toptal\14KiloToMeters.cs" />
+    <Compile Include="Misc\Custom\Toptal\2ShortProgram.cs" />
+    <Compile Include="Misc\Custom\Toptal\1SumOfArray.cs" />
+    <Compile Include="Misc\Custom\Toptal\4Circle.cs" />
+    <Compile Include="Misc\Custom\Toptal\4CircleExtension.cs" />
+    <Compile Include="Misc\Custom\Toptal\4CircleMain.cs" />
+    <Compile Include="Misc\Custom\Toptal\5ShortProgram.cs" />
+    <Compile Include="Misc\Custom\Toptal\6Printer.cs" />
+    <Compile Include="Misc\Custom\Toptal\7MixedDataTypes.cs" />
+    <Compile Include="Misc\Custom\Toptal\9TestStatic.cs" />
+    <Compile Include="Misc\Custom\Toptal\9TestStaticMain.cs" />
+    <Compile Include="Misc\Delegates\AnonymousMethods.cs" />
+    <Compile Include="Misc\Delegates\Delegate.cs" />
+    <Compile Include="Misc\Delegates\DelegateTest\MethodCollections.cs" />
+    <Compile Include="Misc\Delegates\DelegateTest\MethodCollectionsMain.cs" />
+    <Compile Include="Misc\Fibonacci\Fibonacci.cs" />
+    <Compile Include="Misc\Fibonacci\FibonacciParallel.cs" />
+    <Compile Include="Misc\Delegates\LambdaExpression.cs" />
+    <Compile Include="Misc\JustTests\BowSpecification.cs" />
+    <Compile Include="Misc\JustTests\Reflection\Students.cs" />
+    <Compile Include="Misc\LinkedLists\LinkedListsExample.cs" />
+    <Compile Include="Misc\LinkedLists\LinkedListsExampleClient.cs" />
+    <Compile Include="Misc\Reflection\ReflectionMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\Photo.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoFilters.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoProcessor.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoProcessorMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Dynamics\DynamicBinding.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\ExceptionHandling\ExceptionHandlingMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\ExtensionMethods\ExtensionMethodsMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\ExtensionMethods\StringExtensions.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Generics\DiscountCalculator.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Generics\Nullable.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Generics\NullableMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Generics\Product.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Generics\Utilities.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\Book.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\BookRepository.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\LambdaExpressionsMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LINQ\Book.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LINQ\BookRepository.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LINQ\BookRepositoryMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\NullableTypes\NullableTypesMain.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S04Lec32.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S05Lec41.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S05Lec45.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S05Lec44.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S05Lec46.cs" />
+    <Compile Include="Mosh\CSharpBeginner\S05Lec47.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndExtensibility\ConsoleLogger.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndExtensibility\DbMigrator.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndExtensibility\DbMigratorMain.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndExtensibility\FileLogger.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndExtensibility\ILogger.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\INotificationChannel.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\Mail.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\MailNotificationChannel.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\MailService.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\Message.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\SmsNotificationChannel.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\Video.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\VideoEncoder.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndPolymorphism\VideoEncoderMain.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\IShippingCalculator.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\Order.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\OrderMain.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\OrderProcessor.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\Shipment.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\InterfacesAndTestability\ShippingCalculator.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S2P12.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S2P13.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S2P7.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S2P9.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S4P21.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\S4P23.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\Classes\SharedClasses\Order.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StackExample\Stack.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StackExample\StackMain.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StopWatchExample\StopWatch.cs" />
+    <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StopWatchExample\StopWatchMain.cs" />
+    <Compile Include="MSDN\Arrays\BinarySearchEx.cs" />
+    <Compile Include="MSDN\Operators\NullCoalesce.cs" />
+    <Compile Include="MSDN\Yield\YieldMain.cs" />
+    <Compile Include="Personal\AsynchronousProgramming.cs" />
+    <Compile Include="Personal\Delegates\Example\DelegatesEntry.cs" />
+    <Compile Include="Personal\Delegates\Example\AccessToken.cs" />
+    <Compile Include="Personal\Delegates\Example\TokenRequest.cs" />
+    <Compile Include="Personal\Delegates\Example\TokenResponse.cs" />
+    <Compile Include="Personal\Delegates\SelfTest\AccessToken.cs" />
+    <Compile Include="Personal\Delegates\SelfTest\DelegatesEntryTest.cs" />
+    <Compile Include="Personal\Delegates\SelfTest\TokenRequestResponse.cs" />
+    <Compile Include="Personal\Delegates\SelfTest\TokenResponse.cs" />
+    <Compile Include="Personal\ForLoop.cs" />
+    <Compile Include="Personal\Delegates\FuncAction.cs" />
+    <Compile Include="Personal\IsDigit.cs" />
+    <Compile Include="Personal\JsonParse\ApiGenericMethod.cs" />
+    <Compile Include="Personal\CopyHtml.cs" />
+    <Compile Include="Personal\JsonParse\ApiMockModels.cs" />
+    <Compile Include="Personal\NullCollections.cs" />
+    <Compile Include="Personal\QueryString.cs" />
+    <Compile Include="Personal\StringToGuid.cs" />
+    <Compile Include="Personal\TakeWhile.cs" />
+    <Compile Include="Personal\TryParseTest.cs" />
+    <Compile Include="PluralSight\ADO.NET\ConnectionOrientedModel\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluralSight\ADO.NET\ConnectionOrientedModel\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluralSight\ADO.NET\DisconnectedModel\AddRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluralSight\ADO.NET\DisconnectedModel\AddRecord.Designer.cs">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluralSight\ADO.NET\ConnectionStringRun.cs" />
+    <Compile Include="PluralSight\AsynchronousProgramming.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Arrays\Product.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Generics\GenericCode\EmailService.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Generics\GenericCode\LoggingService.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Generics\GenericCode\OperationResult.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Generics\GenericMethod\Vendor.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\Generics\GenericMethod\VendorRepository.cs" />
+    <Compile Include="PluralSight\CollectionsGenerics\LINQ\QuerySyntax\Repo.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M03P10.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M03P11.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P02.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P07.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P08.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P09.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P10.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Arrays\M04P11.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Collections\M05P07.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Collections\M05P08.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Dictionaries\M08P02.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Dictionaries\PrimeMinister.cs" />
+    <Compile Include="PluralSight\CSharpCollections\DoW.cs" />
+    <Compile Include="PluralSight\CSharpCollections\LinkedLists\M07P03.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Lists\M06P06Test\M06P06.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Lists\M06P02.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Lists\M06P06Test\M06P06MainCopy.cs" />
+    <Compile Include="PluralSight\CSharpCollections\Lists\M06P07.cs" />
+    <Compile Include="PluralSight\CSharpCollections\StacksandQueues\M07P04.cs" />
+    <Compile Include="PluralSight\CSharpCollections\StacksandQueues\M07P05.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\FutureProofing\PersonLibrary\PeopleRepository.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\FutureProofing\PersonLibrary\Person.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\AbstractRegularPolygon.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\ConcreteRegularPolygon.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\IRegularPolygon.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\Octagon.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\Square.cs" />
+    <Compile Include="PluralSight\CSharpInterfaces\Polygon\Triangle.cs" />
+    <Compile Include="PluralSight\LearningLINQ\CustomFilterOperator\CustomExtensionMethod.cs" />
+    <Compile Include="PluralSight\LearningLINQ\CustomFilterOperator\DeferredExcecutionMain.cs" />
+    <Compile Include="PluralSight\LearningLINQ\CustomFilterOperator\Movie.cs" />
+    <Compile Include="PluralSight\LearningLINQ\Features\Employee.cs" />
+    <Compile Include="PluralSight\LearningLINQ\Features\EmployeeCollection.cs" />
+    <Compile Include="PluralSight\LearningLINQ\LINQCar\Car.cs" />
+    <Compile Include="PluralSight\LearningLINQ\LINQCar\CarsMain.cs" />
+    <Compile Include="PluralSight\RegularExpressions\RegexMatch.cs" />
+    <Compile Include="Polymorphism\Base_Derived\Base.cs" />
+    <Compile Include="Polymorphism\Base_Derived\Derived.cs" />
+    <Compile Include="Polymorphism\Base_Derived\Derived2.cs" />
+    <Compile Include="Polymorphism\Base_Derived\MainCopy.cs" />
+    <Compile Include="Polymorphism\Casting\CastingExercise.cs" />
+    <Compile Include="Polymorphism\Sealed\Base.cs" />
+    <Compile Include="Polymorphism\Sealed\Child.cs" />
+    <Compile Include="Polymorphism\Sealed\GrandChild.cs" />
+    <Compile Include="Polymorphism\Sealed\GrandGrandChild.cs" />
+    <Compile Include="Polymorphism\Sealed\MegaGrandChild.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEW\Challenge.cs" />
+    <Compile Include="SOLID\DependencyInversion.cs" />
+    <Compile Include="SOLID\LiskovSubstitution.cs" />
+    <Compile Include="SOLID\OpenClosedPrinciple.cs" />
+    <Compile Include="SOLID\OpenClosedPrincipleTest.cs" />
+    <Compile Include="SOLID\SegregationPrinciple.cs" />
+    <Compile Include="SOLID\SingleResponsibilityPrinciple.cs" />
+    <Compile Include="Logic\BoolParse.cs" />
+    <Compile Include="Logic\DateParser.cs" />
+    <Compile Include="Logic\DefaultValue.cs" />
+    <Compile Include="Logic\EasternTime.cs" />
+    <Compile Include="Logic\EDIExpress.cs" />
+    <Compile Include="Logic\EnumParsing.cs" />
+    <Compile Include="Logic\NMFCParser.cs" />
+    <Compile Include="Logic\PhoneNumber.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateBuildingResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateFailedResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateFrankensteinResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateMockRawResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateMockResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateSuccessResponse.cs" />
+    <Compile Include="Logic\MercuryGate\MercuryGateUnitTestResponse.cs" />
+    <Compile Include="Logic\NEMFProblems.cs" />
+    <Compile Include="Logic\SingleEmail.cs" />
+    <Compile Include="Logic\TimeLogic.cs" />
+    <Compile Include="Logic\XMLParser.cs" />
+    <Compile Include="Logic\XPO.cs" />
+    <Compile Include="TestingClass.cs" />
+    <Compile Include="TwilioProj\TwilioTest.cs" />
+    <Compile Include="Udemy\RegexTest.cs" />
+    <Compile Include="Unity\ICar.cs" />
+    <Compile Include="Unity\ICarKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="PluralSight\LearningLINQ\LINQCar\fuel.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inheritance\" />
+    <Folder Include="PluralSight\CSharpInterfaces\FutureProofing\PeopleViewer\" />
+    <Folder Include="TestCases\" />
+    <Folder Include="TheTradeDesk\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PluralSight\ADO.NET\ConnectionOrientedModel\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluralSight\ADO.NET\DisconnectedModel\AddRecord.resx">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SEW\wordlist.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+</Project>

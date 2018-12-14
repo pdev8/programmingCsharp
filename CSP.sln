@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSP", "CSP\CSP.csproj", "{580283E6-8487-4B7B-905F-950C437E94C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPTests", "CSPTests\CSPTests.csproj", "{B82C0B7C-EB9E-4DCD-9D2C-F124C2155E53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoshWPF", "MoshWPF\MoshWPF.csproj", "{F82E335C-5183-4AA7-8E9F-0786612B45BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{580283E6-8487-4B7B-905F-950C437E94C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580283E6-8487-4B7B-905F-950C437E94C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580283E6-8487-4B7B-905F-950C437E94C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580283E6-8487-4B7B-905F-950C437E94C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82C0B7C-EB9E-4DCD-9D2C-F124C2155E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82C0B7C-EB9E-4DCD-9D2C-F124C2155E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82C0B7C-EB9E-4DCD-9D2C-F124C2155E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82C0B7C-EB9E-4DCD-9D2C-F124C2155E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82E335C-5183-4AA7-8E9F-0786612B45BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82E335C-5183-4AA7-8E9F-0786612B45BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82E335C-5183-4AA7-8E9F-0786612B45BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82E335C-5183-4AA7-8E9F-0786612B45BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
