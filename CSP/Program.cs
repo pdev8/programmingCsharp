@@ -28,6 +28,7 @@ using CSP.Expression_bodied_Members;
 using CSP.GitHub.DependencyInjection;
 using CSP.HackerRank;
 using CSP.HerculesFreight;
+using CSP.Logic;
 using CSP.Misc;
 using CSP.Misc.Custom;
 using CSP.Misc.Custom.Toptal;
@@ -93,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            PhoneNumber.Run();
+            DateParser.Run();
 
             #region Form
             //Application.EnableVisualStyles();

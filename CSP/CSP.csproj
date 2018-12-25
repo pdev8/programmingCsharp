@@ -103,6 +103,7 @@
     <Compile Include="AdventOCode\Day1.cs" />
     <Compile Include="AdventOCode\Day2.cs" />
     <Compile Include="AdventOCode\Day3.cs" />
+    <Compile Include="AdventOCode\Day4.cs" />
     <Compile Include="AdventOCode\Day5.cs" />
     <Compile Include="AdventOCode\Day7.cs" />
     <Compile Include="AdventOCode\FileReader.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="HackerRank\SimpleArraySum_Easy.cs" />
     <Compile Include="HerculesFreight\HerculesFreightMainCopy.cs" />
     <Compile Include="HerculesFreight\HerculesResponse.cs" />
+    <Compile Include="Logic\IntToString.cs" />
     <Compile Include="Misc\Custom\ETAP\CustomList.cs" />
     <Compile Include="Misc\Custom\ETAP\MainCopy.cs" />
     <Compile Include="Misc\Custom\Test1.cs" />

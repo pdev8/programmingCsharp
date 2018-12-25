@@ -35,35 +35,68 @@ namespace CSP.AdventOCode
             CalculateLastStep(lines);
         }
 
-        private void CalculateLastStep(string[] lines)
+        private static string CalculateLastStep(string[] lines)
         {
-            var firstLetter = string.Empty;
-            var secondLetter = string.Empty;
+            var correctOrder = string.Empty;
 
-            var instructionOrder = new List<string>();
+            var firstLine = lines.First();
+            var parentNode = firstLine[5];
+            var childNode = firstLine[36];
+
+            var node = new Node
+            {
+                Letter = childNode,
+                Parents = new List<Node>
+                {
+                    new Node
+                    {
+                        Letter = parentNode,
+                        Parents = new List<Node>()
+                    }
+                }
+            };
+
             foreach (var line in lines)
             {
-                var words = line.Split(' ');
 
-                var firstIndex = Array.IndexOf(words, words.First(s => string.Equals(s, "step", StringComparison.OrdinalIgnoreCase)));
-                firstLetter = words[firstIndex + 1];
+            }
 
-                var secondIndex = Array.IndexOf(words, words.Last(s => string.Equals(s, "step", StringComparison.OrdinalIgnoreCase)));
-                secondLetter = words[secondIndex + 1];
+            return correctOrder;
+        }
 
-                if (!instructionOrder.Any())
+        private class Node
+        {
+            public char Letter { get; set; }
+
+            public List<Node> Parents { get; set; }
+
+            public Node()
+            {
+                this.Parents = new List<Node>();
+            }
+
+            public Node FindNode(char letter)
+            {
+                if (letter == this.Letter)
                 {
-                    instructionOrder.Add(firstLetter);
-                    instructionOrder.Add(secondLetter);
+                    return this;
                 }
-                else if (!instructionOrder.Contains(secondLetter))
+
+                foreach (var parent in this.Parents)
                 {
-                    instructionOrder.Add(secondLetter);
+                    var node = parent.FindNode(letter);
+
+                    if (node == null)
+                    {
+                        this.Parents.Add(new Node
+                        {
+                            Letter = letter,
+                            Parents = new List<Node>()
+                        });
+                    }
                 }
-                else if (instructionOrder.Contains(firstLetter) && !instructionOrder.Contains(secondLetter))
-                {
-                    instructionOrder.Add(secondLetter);
-                }
+
+                return null;
             }
         }
     }
