@@ -94,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            DateParser.Run();
+            ReverseString.Run();
 
             #region Form
             //Application.EnableVisualStyles();

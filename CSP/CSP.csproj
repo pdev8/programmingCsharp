@@ -278,6 +278,8 @@
     <Compile Include="Personal\Delegates\SelfTest\TokenResponse.cs" />
     <Compile Include="Personal\ForLoop.cs" />
     <Compile Include="Personal\Delegates\FuncAction.cs" />
+    <Compile Include="Personal\IoCPractice\DependentObjectCreation.cs" />
+    <Compile Include="Personal\IoCPractice\FactoryPattern.cs" />
     <Compile Include="Personal\IsDigit.cs" />
     <Compile Include="Personal\JsonParse\ApiGenericMethod.cs" />
     <Compile Include="Personal\CopyHtml.cs" />
