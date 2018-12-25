@@ -94,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            ReverseString.Run();
+            Palindrome.Run();
 
             #region Form
             //Application.EnableVisualStyles();
