@@ -1,5 +1,0 @@
-C:\Users\ppauleee\Documents\Personal\BegVCSharp\Chapter13\Ch13Ex08\Ch13Ex08\bin\Debug\Ch13Ex08.exe.config
-C:\Users\ppauleee\Documents\Personal\BegVCSharp\Chapter13\Ch13Ex08\Ch13Ex08\bin\Debug\Ch13Ex08.exe
-C:\Users\ppauleee\Documents\Personal\BegVCSharp\Chapter13\Ch13Ex08\Ch13Ex08\bin\Debug\Ch13Ex08.pdb
-C:\Users\ppauleee\Documents\Personal\BegVCSharp\Chapter13\Ch13Ex08\Ch13Ex08\obj\Debug\Ch13Ex08.exe
-C:\Users\ppauleee\Documents\Personal\BegVCSharp\Chapter13\Ch13Ex08\Ch13Ex08\obj\Debug\Ch13Ex08.pdb
