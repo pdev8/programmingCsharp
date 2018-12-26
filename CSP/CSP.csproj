@@ -116,6 +116,7 @@
     <Compile Include="Algorithms\MergeSort.cs" />
     <Compile Include="Algorithms\Palindrome.cs" />
     <Compile Include="Algorithms\ReverseString.cs" />
+    <Compile Include="Algorithms\ReversingInt.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex01\MainCopy.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\ClassA.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\MainCopy.cs" />
@@ -200,6 +201,7 @@
     <Compile Include="Misc\Delegates\Delegate.cs" />
     <Compile Include="Misc\Delegates\DelegateTest\MethodCollections.cs" />
     <Compile Include="Misc\Delegates\DelegateTest\MethodCollectionsMain.cs" />
+    <Compile Include="Misc\Delegates\WorkingWithFunc.cs" />
     <Compile Include="Misc\Fibonacci\Fibonacci.cs" />
     <Compile Include="Misc\Fibonacci\FibonacciParallel.cs" />
     <Compile Include="Misc\Delegates\LambdaExpression.cs" />
