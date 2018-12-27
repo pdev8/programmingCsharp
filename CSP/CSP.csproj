@@ -112,7 +112,9 @@
     <Compile Include="AdventOCode\ScottsWay.cs" />
     <Compile Include="Algorithms\DogBread.cs" />
     <Compile Include="Algorithms\Fizzbuzz.cs" />
+    <Compile Include="Algorithms\FizzBuzzClassic.cs" />
     <Compile Include="Algorithms\LINQ2.cs" />
+    <Compile Include="Algorithms\MaxChars.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
     <Compile Include="Algorithms\Palindrome.cs" />
     <Compile Include="Algorithms\ReverseString.cs" />

@@ -94,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            ReversingInt.Run();
+            FizzBuzzClassic.Run();
 
             #region Form
             //Application.EnableVisualStyles();

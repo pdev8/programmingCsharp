@@ -18,7 +18,7 @@ namespace CSP.AdventOCode
 
         public void Run()
         {
-            var path = @"C:\Users\ppauleee\Documents\Personal\AdventOCode\Instructions.txt";
+            ////var path = @"C:\Users\ppauleee\Documents\Personal\AdventOCode\Instructions.txt";
             //var lines = this.fileReader.ReadLinesFromTextFile(path);
 
             var lines = new[]
