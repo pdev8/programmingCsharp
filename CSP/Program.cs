@@ -94,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            FizzBuzzClassic.Run();
+            Anagrams.Run();
 
             #region Form
             //Application.EnableVisualStyles();

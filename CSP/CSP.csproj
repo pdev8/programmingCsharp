@@ -110,6 +110,8 @@
     <Compile Include="AdventOCode\IFileReader.cs" />
     <Compile Include="AdventOCode\Node.cs" />
     <Compile Include="AdventOCode\ScottsWay.cs" />
+    <Compile Include="Algorithms\Anagrams.cs" />
+    <Compile Include="Algorithms\ArrayChunk.cs" />
     <Compile Include="Algorithms\DogBread.cs" />
     <Compile Include="Algorithms\Fizzbuzz.cs" />
     <Compile Include="Algorithms\FizzBuzzClassic.cs" />
