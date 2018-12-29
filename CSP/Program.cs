@@ -94,7 +94,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            Anagrams.Run();
+            Steps.Run();
 
             #region Form
             //Application.EnableVisualStyles();

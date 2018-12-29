@@ -112,6 +112,7 @@
     <Compile Include="AdventOCode\ScottsWay.cs" />
     <Compile Include="Algorithms\Anagrams.cs" />
     <Compile Include="Algorithms\ArrayChunk.cs" />
+    <Compile Include="Algorithms\Capitalization.cs" />
     <Compile Include="Algorithms\DogBread.cs" />
     <Compile Include="Algorithms\Fizzbuzz.cs" />
     <Compile Include="Algorithms\FizzBuzzClassic.cs" />
@@ -121,6 +122,8 @@
     <Compile Include="Algorithms\Palindrome.cs" />
     <Compile Include="Algorithms\ReverseString.cs" />
     <Compile Include="Algorithms\ReversingInt.cs" />
+    <Compile Include="Algorithms\Revisited\ArrayChunkRevisited.cs" />
+    <Compile Include="Algorithms\Steps.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex01\MainCopy.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\ClassA.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\MainCopy.cs" />
