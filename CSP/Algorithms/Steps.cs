@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -61,6 +62,32 @@ namespace CSP.Algorithms
 
                 Console.WriteLine();
             }
+        }
+
+        // TODO: Need to figure this recursive solution
+        private static void PrintSteps3(int numOfSteps, int row = 0, string stair = "")
+        {
+            if (numOfSteps == row)
+            {
+                return;
+            }
+
+            if (numOfSteps == stair.Length)
+            {
+                Console.WriteLine(stair);
+                PrintSteps3(numOfSteps, ++row);
+            }
+
+            if (stair.Length <= row)
+            {
+                stair += "#";
+            }
+            else
+            {
+                stair += ' ';
+            }
+
+            PrintSteps3(numOfSteps, row, stair);
         }
     }
 }

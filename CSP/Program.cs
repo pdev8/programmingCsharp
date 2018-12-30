@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using CSP.AdventOCode;
 using CSP.Algorithms;
+using CSP.Algorithms.Revisited;
 using CSP.Cake;
 using CSP.Cake.IC04;
 using CSP.Ch10Ex02;
@@ -94,7 +95,7 @@ namespace CSP
     {
         static void Main(string[] args)
         {
-            Steps.Run();
+            PyramidSteps.Run();
 
             #region Form
             //Application.EnableVisualStyles();

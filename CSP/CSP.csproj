@@ -120,6 +120,7 @@
     <Compile Include="Algorithms\MaxChars.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
     <Compile Include="Algorithms\Palindrome.cs" />
+    <Compile Include="Algorithms\PyramidSteps.cs" />
     <Compile Include="Algorithms\ReverseString.cs" />
     <Compile Include="Algorithms\ReversingInt.cs" />
     <Compile Include="Algorithms\Revisited\ArrayChunkRevisited.cs" />
