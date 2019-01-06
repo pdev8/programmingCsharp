@@ -24,6 +24,9 @@
 
             Derived2 test7 = new Derived2();
             ((Base) test7).Call();
+
+            Derived test8 = new Derived();
+            ((Base)test8).Call();
         }
     }
 }

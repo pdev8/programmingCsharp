@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CSP.Challenge.Structure;
 
 namespace CSP.Algorithms
 {
@@ -33,7 +34,7 @@ namespace CSP.Algorithms
         /// </summary>
         public static void Run()
         {
-            BuildPyramid(3);
+            BuildPyramidRecursively(3);
         }
 
         public static void BuildPyramid(int number)
@@ -55,6 +56,36 @@ namespace CSP.Algorithms
 
                 Console.WriteLine();
             }
+        }
+
+        // TODO: Need to figure this out...
+        public static void BuildPyramidRecursively(int number, int row = 0, string level = "")
+        {
+            if (row == number)
+            {
+                return;
+            }
+
+            if (level.Length == 2 * number - 1)
+            {
+                Console.Write(level);
+
+                BuildPyramidRecursively(number, row + 1);
+            }
+
+            var midpoint = Math.Floor((decimal)(2 * number - 1) / 2);
+
+            var add = string.Empty;
+            if (midpoint - row <= level.Length && midpoint + row >= level.Length)
+            {
+                add = "+";
+            }
+            else
+            {
+                add = "";
+            }
+
+            BuildPyramidRecursively(number, row, level + add);
         }
     }
 }
