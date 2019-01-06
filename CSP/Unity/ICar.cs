@@ -40,9 +40,10 @@ namespace CSP.Unity
 
     public class Driver
     {
-        private ICar _car = null;
+        private readonly ICar _car;
 
-        public Driver(ICar car)
+        public Driver(
+            ICar car)
         {
             _car = car;
         }

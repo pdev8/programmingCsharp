@@ -127,6 +127,7 @@
     <Compile Include="Algorithms\Revisited\ArrayChunkRevisited.cs" />
     <Compile Include="Algorithms\Steps.cs" />
     <Compile Include="Algorithms\Vowels.cs" />
+    <Compile Include="ApplicationStart.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex01\MainCopy.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\ClassA.cs" />
     <Compile Include="BeginningCSharpProgramming\Ch10Ex02\MainCopy.cs" />

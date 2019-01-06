@@ -86,6 +86,7 @@ using CSP.SOLID.Builder;
 using CSP.SOLID.Exercises;
 using CSP.TeknowlogiAPIs;
 using CSP.Unity;
+using Unity;
 using AsynchronousProgramming = CSP.Personal.AsynchronousProgramming;
 using MainCopy = CSP.Polymorphism.Base_Derived.MainCopy;
 
@@ -98,6 +99,8 @@ namespace CSP
     {
         static void Main(string[] args)
         {
+            var container = ApplicationStart.Initialize();
+
             LifeWithBuilder.Run();
 
             #region Form
