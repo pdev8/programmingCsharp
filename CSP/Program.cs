@@ -101,7 +101,7 @@ namespace CSP
         {
             var container = ApplicationStart.Initialize();
 
-            LifeWithBuilder.Run();
+            FacetedBuilder.Run();
 
             #region Form
             //Application.EnableVisualStyles();

@@ -191,6 +191,7 @@
     <Compile Include="HerculesFreight\HerculesFreightMainCopy.cs" />
     <Compile Include="HerculesFreight\HerculesResponse.cs" />
     <Compile Include="Logic\IntToString.cs" />
+    <Compile Include="Logic\SessionId.cs" />
     <Compile Include="Misc\Custom\ETAP\CustomList.cs" />
     <Compile Include="Misc\Custom\ETAP\MainCopy.cs" />
     <Compile Include="Misc\Custom\Test1.cs" />
@@ -373,6 +374,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SEW\Challenge.cs" />
+    <Compile Include="SOLID\Builder\FacetedBuilder.cs" />
+    <Compile Include="SOLID\Builder\FluentBuilder.cs" />
     <Compile Include="SOLID\Builder\LifeWithBuilder.cs" />
     <Compile Include="SOLID\Builder\LifeWithoutBuilder.cs" />
     <Compile Include="SOLID\DependencyInversion.cs" />
