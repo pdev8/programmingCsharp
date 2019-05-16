@@ -48,9 +48,6 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="Selenium.WebDriverBackedSelenium, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriverBackedSelenium.3.14.0\lib\net45\Selenium.WebDriverBackedSelenium.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -90,12 +87,6 @@
     </Reference>
     <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.8.11\lib\net45\Unity.ServiceLocation.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -178,20 +169,24 @@
     <Compile Include="DotNetPerls\Generic\Test.cs" />
     <Compile Include="Expression-bodied_Members\Location.cs" />
     <Compile Include="Expression-bodied_Members\Person.cs" />
+    <Compile Include="FileStream\FileIOApplication.cs" />
+    <Compile Include="FileStream\StreamReaderPractice.cs" />
+    <Compile Include="FileStream\StreamPractice.cs" />
     <Compile Include="GitHub\DependencyInjection\IWeapon.cs" />
     <Compile Include="GitHub\DependencyInjection\Samurai.cs" />
     <Compile Include="GitHub\DependencyInjection\SamuraiMain.cs" />
     <Compile Include="GitHub\DependencyInjection\Sword.cs" />
+    <Compile Include="HackerRank.cs" />
     <Compile Include="HackerRank\MirthEx01-2.cs" />
     <Compile Include="HackerRank\MirthEx02.cs" />
     <Compile Include="HackerRank\MirthEx01.cs" />
     <Compile Include="HackerRank\MirthEx03.cs" />
     <Compile Include="HackerRank\MirthEx05.cs" />
     <Compile Include="HackerRank\SimpleArraySum_Easy.cs" />
-    <Compile Include="HerculesFreight\HerculesFreightMainCopy.cs" />
     <Compile Include="HerculesFreight\HerculesResponse.cs" />
     <Compile Include="Logic\IntToString.cs" />
     <Compile Include="Logic\SessionId.cs" />
+    <Compile Include="Logic\SignedBy.cs" />
     <Compile Include="Misc\Custom\ETAP\CustomList.cs" />
     <Compile Include="Misc\Custom\ETAP\MainCopy.cs" />
     <Compile Include="Misc\Custom\Test1.cs" />
@@ -217,14 +212,19 @@
     <Compile Include="Misc\Fibonacci\Fibonacci.cs" />
     <Compile Include="Misc\Fibonacci\FibonacciParallel.cs" />
     <Compile Include="Misc\Delegates\LambdaExpression.cs" />
+    <Compile Include="Misc\Generics\GenericList.cs" />
     <Compile Include="Misc\JustTests\BowSpecification.cs" />
     <Compile Include="Misc\JustTests\Reflection\Students.cs" />
     <Compile Include="Misc\LinkedLists\LinkedListsExample.cs" />
     <Compile Include="Misc\LinkedLists\LinkedListsExampleClient.cs" />
     <Compile Include="Misc\Reflection\ReflectionMain.cs" />
-    <Compile Include="Mosh\CSharpAdvanced\Delegates\Photo.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\ActionDelegate.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\ActionDelegateExercise.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\Covariance.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\FuncDelegate.cs" />
     <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoFilters.cs" />
     <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoProcessor.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\Delegates\Photo.cs" />
     <Compile Include="Mosh\CSharpAdvanced\Delegates\PhotoProcessorMain.cs" />
     <Compile Include="Mosh\CSharpAdvanced\Dynamics\DynamicBinding.cs" />
     <Compile Include="Mosh\CSharpAdvanced\ExceptionHandling\ExceptionHandlingMain.cs" />
@@ -238,6 +238,7 @@
     <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\Book.cs" />
     <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\BookRepository.cs" />
     <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\LambdaExpressionsMain.cs" />
+    <Compile Include="Mosh\CSharpAdvanced\LambdaExpressions\LambdaExpressionsMain2.cs" />
     <Compile Include="Mosh\CSharpAdvanced\LINQ\Book.cs" />
     <Compile Include="Mosh\CSharpAdvanced\LINQ\BookRepository.cs" />
     <Compile Include="Mosh\CSharpAdvanced\LINQ\BookRepositoryMain.cs" />
@@ -279,6 +280,7 @@
     <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StackExample\StackMain.cs" />
     <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StopWatchExample\StopWatch.cs" />
     <Compile Include="Mosh\CSharpIntermediate\StudentCodeReview\StopWatchExample\StopWatchMain.cs" />
+    <Compile Include="Mosh\TestNinja\Math.cs" />
     <Compile Include="MSDN\Arrays\BinarySearchEx.cs" />
     <Compile Include="MSDN\Operators\NullCoalesce.cs" />
     <Compile Include="MSDN\Yield\YieldMain.cs" />

@@ -26,6 +26,7 @@ using CSP.CSharpCorner;
 using CSP.Dart;
 using CSP.DotNetPerls.Generic;
 using CSP.Expression_bodied_Members;
+using CSP.FileStream;
 using CSP.GitHub.DependencyInjection;
 using CSP.HackerRank;
 using CSP.HerculesFreight;
@@ -101,7 +102,7 @@ namespace CSP
         {
             var container = ApplicationStart.Initialize();
 
-            FacetedBuilder.Run();
+            PhotoProcessorMain.Run();
 
             #region Form
             //Application.EnableVisualStyles();

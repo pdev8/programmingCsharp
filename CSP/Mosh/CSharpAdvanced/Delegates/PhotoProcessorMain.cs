@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSP.Mosh.CSharpAdvanced.Delegates
 {
@@ -20,9 +16,6 @@ namespace CSP.Mosh.CSharpAdvanced.Delegates
             processor.Process("photo.jpg", filterHandler);
         }
 
-        static void RemoveRedEyeFilter(Photo photo)
-        {
-            Console.WriteLine("Apply RemoveRedEye");
-        }
+        public static void RemoveRedEyeFilter(Photo photo) => Console.WriteLine("Apply RemoveRedEye");
     }
 }

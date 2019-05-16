@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace CSP.Mosh.CSharpAdvanced.Delegates
 {
-    class Photo
+    public class Photo
     {
-        public static Photo Load(string path) => new Photo();
+        public static Photo Load(string path)
+        {
+            return new Photo();
+        }
 
-        public void Save() { }
+        public void Save()
+        {
+        }
     }
 }
