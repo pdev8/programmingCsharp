@@ -103,7 +103,7 @@ namespace CSP
             var container = ApplicationStart.Initialize();
 
             PhotoProcessorMain.Run();
-
+            
             #region Form
             //Application.EnableVisualStyles();
             //Application.Run(new Form1());

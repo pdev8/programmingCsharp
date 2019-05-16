@@ -411,6 +411,7 @@
     <Compile Include="Logic\XPO.cs" />
     <Compile Include="TestingClass.cs" />
     <Compile Include="TwilioProj\TwilioTest.cs" />
+    <Compile Include="Udemy\CodingInterviewBootcamp\ReverseString.cs" />
     <Compile Include="Udemy\RegexTest.cs" />
     <Compile Include="Unity\ICar.cs" />
     <Compile Include="Unity\ICarKey.cs" />
